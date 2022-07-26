@@ -30,19 +30,19 @@ Then add the script and the css to the HTML file :
 
 **JavaScript**:
 ```javascript
-breakpoints.wheIs('large', ()=>{
+breakpoints.whenIs('large', ()=>{
     // Do stuf when the screen is large
 });
 
-breakpoints.wheIs('largeorsmall', ()=>{
+breakpoints.whenIs('largeorsmall', ()=>{
     // Do stuf when the screen is large or small
 });
 
-breakpoints.wheIs('largetowide', ()=>{
+breakpoints.whenIs('largetowide', ()=>{
     // Do stuf when the screen is large or xlarge
 });
 
-breakpoints.wheIs('largewidthwide', ()=>{
+breakpoints.whenIs('largewidthwide', ()=>{
     // Do stuf when the screen is large or xlarge or wide screen
 });
 ```
