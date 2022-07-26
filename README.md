@@ -65,4 +65,6 @@ breakpoints.whenIs('largewidthwide', ()=>{
 ```
 
 
+## Contributions
+This is an [open source project](LICENSE.md). Please contribute by forking this repo and issueing a pull request.
 
