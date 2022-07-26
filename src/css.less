@@ -1,0 +1,436 @@
+
+/**
+ * Usage - ( the css-class names here is dependent on the default breakpoints you will set up in config.js )
+ * .{prefix}-{size}
+ * OR  .{prefix}-{size}or{size}   
+ * OR  .{prefix}-{fromSize}to{toSize}
+ * OR  .{prefix}-{fromSize}with{withSize}
+ * 
+ * Example
+ * .bps-large  --- On large screens
+ * .bps-largeorwide  --- On large or wide screens
+ * .bps-largetowide  --- On large and xlarge
+ * .bps-largewidthwide  --- On large , xlarge and wide screen
+ * 
+*/
+
+.bps-tiny {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 320px ) {
+        display: block;
+    }
+}
+.bps-mobile {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 480px ) {
+        display: block;
+    }
+}
+.bps-small {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 768px ) {
+        display: block;
+    }
+}
+.bps-medium {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1024px ) {
+        display: block;
+    }
+}
+.bps-large {
+    display: none;
+    @media screen and ( min-width: 1025px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-xlarge {
+    display: none;
+    @media screen and ( min-width: 1201px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-wide {
+    display: none;
+    @media screen and ( min-width: 1900px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-tinytomobile {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 321px ) {
+        display: block;
+    }
+}
+.bps-tinywithmobile {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 480px ) {
+        display: block;
+    }
+}
+.bps-tinyormobile {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 320px ), ( min-width: 321px ) and ( max-width: 480px ) {
+        display: block;
+    }
+}
+.bps-tinytosmall {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 481px ) {
+        display: block;
+    }
+}
+.bps-tinywithsmall {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 768px ) {
+        display: block;
+    }
+}
+.bps-tinyorsmall {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 320px ), ( min-width: 481px ) and ( max-width: 768px ) {
+        display: block;
+    }
+}
+.bps-tinytomedium {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 769px ) {
+        display: block;
+    }
+}
+.bps-tinywithmedium {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 1024px ) {
+        display: block;
+    }
+}
+.bps-tinyormedium {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 320px ), ( min-width: 769px ) and ( max-width: 1024px ) {
+        display: block;
+    }
+}
+.bps-tinytolarge {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 1025px ) {
+        display: block;
+    }
+}
+.bps-tinywithlarge {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-tinyorlarge {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 320px ), ( min-width: 1025px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-tinytoxlarge {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 1201px ) {
+        display: block;
+    }
+}
+.bps-tinywithxlarge {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-tinyorxlarge {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 320px ), ( min-width: 1201px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-tinytowide {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-tinywithwide {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-tinyorwide {
+    display: none;
+    @media screen and ( min-width: 200px ) and ( max-width: 320px ), ( min-width: 1900px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-mobiletosmall {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 481px ) {
+        display: block;
+    }
+}
+.bps-mobilewithsmall {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 768px ) {
+        display: block;
+    }
+}
+.bps-mobileorsmall {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 480px ), ( min-width: 481px ) and ( max-width: 768px ) {
+        display: block;
+    }
+}
+.bps-mobiletomedium {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 769px ) {
+        display: block;
+    }
+}
+.bps-mobilewithmedium {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 1024px ) {
+        display: block;
+    }
+}
+.bps-mobileormedium {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 480px ), ( min-width: 769px ) and ( max-width: 1024px ) {
+        display: block;
+    }
+}
+.bps-mobiletolarge {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 1025px ) {
+        display: block;
+    }
+}
+.bps-mobilewithlarge {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-mobileorlarge {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 480px ), ( min-width: 1025px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-mobiletoxlarge {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 1201px ) {
+        display: block;
+    }
+}
+.bps-mobilewithxlarge {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-mobileorxlarge {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 480px ), ( min-width: 1201px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-mobiletowide {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-mobilewithwide {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-mobileorwide {
+    display: none;
+    @media screen and ( min-width: 321px ) and ( max-width: 480px ), ( min-width: 1900px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-smalltomedium {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 769px ) {
+        display: block;
+    }
+}
+.bps-smallwithmedium {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 1024px ) {
+        display: block;
+    }
+}
+.bps-smallormedium {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 768px ), ( min-width: 769px ) and ( max-width: 1024px ) {
+        display: block;
+    }
+}
+.bps-smalltolarge {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 1025px ) {
+        display: block;
+    }
+}
+.bps-smallwithlarge {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-smallorlarge {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 768px ), ( min-width: 1025px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-smalltoxlarge {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 1201px ) {
+        display: block;
+    }
+}
+.bps-smallwithxlarge {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-smallorxlarge {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 768px ), ( min-width: 1201px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-smalltowide {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-smallwithwide {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-smallorwide {
+    display: none;
+    @media screen and ( min-width: 481px ) and ( max-width: 768px ), ( min-width: 1900px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-mediumtolarge {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1025px ) {
+        display: block;
+    }
+}
+.bps-mediumwithlarge {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-mediumorlarge {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1024px ), ( min-width: 1025px ) and ( max-width: 1200px ) {
+        display: block;
+    }
+}
+.bps-mediumtoxlarge {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1201px ) {
+        display: block;
+    }
+}
+.bps-mediumwithxlarge {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-mediumorxlarge {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1024px ), ( min-width: 1201px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-mediumtowide {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-mediumwithwide {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-mediumorwide {
+    display: none;
+    @media screen and ( min-width: 769px ) and ( max-width: 1024px ), ( min-width: 1900px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-largetoxlarge {
+    display: none;
+    @media screen and ( min-width: 1025px ) and ( max-width: 1201px ) {
+        display: block;
+    }
+}
+.bps-largewithxlarge {
+    display: none;
+    @media screen and ( min-width: 1025px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-largeorxlarge {
+    display: none;
+    @media screen and ( min-width: 1025px ) and ( max-width: 1200px ), ( min-width: 1201px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-largetowide {
+    display: none;
+    @media screen and ( min-width: 1025px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-largewithwide {
+    display: none;
+    @media screen and ( min-width: 1025px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-largeorwide {
+    display: none;
+    @media screen and ( min-width: 1025px ) and ( max-width: 1200px ), ( min-width: 1900px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-xlargetowide {
+    display: none;
+    @media screen and ( min-width: 1201px ) and ( max-width: 1900px ) {
+        display: block;
+    }
+}
+.bps-xlargewithwide {
+    display: none;
+    @media screen and ( min-width: 1201px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}
+.bps-xlargeorwide {
+    display: none;
+    @media screen and ( min-width: 1201px ) and ( max-width: 1900px ), ( min-width: 1900px ) and ( max-width: 5000px ) {
+        display: block;
+    }
+}

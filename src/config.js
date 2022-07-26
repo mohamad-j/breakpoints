@@ -1,0 +1,16 @@
+const breakpoints = [
+    {"type":"tiny", "min": 200, "max": 320},
+    {"type":"mobile", "min": 321, "max": 480},
+    {"type":"small", "min": 481, "max": 768},
+    {"type":"medium", "min": 769, "max": 1024},
+    {"type":"large", "min": 1025, "max": 1200},
+    {"type":"xlarge", "min": 1201, "max": 1900},
+    {"type":"wide", "min": 1900, "max": 5000}
+];
+
+const css_class_prefix = "bps";
+
+module.exports = {
+    breakpoints,
+    css_class_prefix
+}
