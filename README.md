@@ -8,11 +8,11 @@
 
 Clone this repository on your PC. Then run :
 
-npm i
+    npm i
 
 Then run:
 
-npm run build
+    npm run build
 
 Then add the script and the css to the HTML file :
 
