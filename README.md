@@ -2,7 +2,8 @@
 ## The Javascript library that make building responsive app easier.
 
 > This is a JS class that will emit events on every breakpoint.
-> All breakpoints are can be modified.
+> All breakpoints can be modified.
+> In addition to emiting events, this will auto create css-classes to be used in your responsive UI.
 
 # Install
 
